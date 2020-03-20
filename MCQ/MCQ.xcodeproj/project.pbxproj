@@ -62,7 +62,7 @@
 			children = (
 				1D208EFC242266B70065B703 /* AppDelegate.swift */,
 				1D208EFE242266B70065B703 /* SceneDelegate.swift */,
-				1D208F02242266B70065B703 /* Main.storyboard */,
+				1D9F1AF72424F7D700A3AE89 /* View */,
 				1D208F1424228F7D0065B703 /* Model */,
 				1D208F1124228F100065B703 /* Controller */,
 				1D208F05242266B80065B703 /* Assets.xcassets */,
@@ -87,6 +87,14 @@
 				1D208F16242293680065B703 /* QuizBrain.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1D9F1AF72424F7D700A3AE89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D208F02242266B70065B703 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
