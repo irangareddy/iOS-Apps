@@ -66,7 +66,7 @@
 				1DFDCFE4242758FC00B23EF3 /* SceneDelegate.swift */,
 				1DFDCFFB24275F5100B23EF3 /* Model */,
 				1DFDCFF624275DEC00B23EF3 /* Controller */,
-				1DFDCFE8242758FC00B23EF3 /* Main.storyboard */,
+				1DFDCFFE242764D400B23EF3 /* View */,
 				1DFDCFEB242758FD00B23EF3 /* Assets.xcassets */,
 				1DFDCFED242758FD00B23EF3 /* LaunchScreen.storyboard */,
 				1DFDCFF0242758FD00B23EF3 /* Info.plist */,
@@ -90,6 +90,14 @@
 				1DFDCFFC24275F6800B23EF3 /* BMI.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1DFDCFFE242764D400B23EF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DFDCFE8242758FC00B23EF3 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
