@@ -19,10 +19,7 @@ class CalculatorViewController: UIViewController {
     
     @IBOutlet weak var splitNumberLabel: UILabel!
     
-    var finalResult = "0.0"
-    var tipValue = 0.10
-    var billTotal = 0.0
-    var noOfPeople = 2
+    var calculatorBrain = CalculatorBrain()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +34,16 @@ class CalculatorViewController: UIViewController {
         sender.isSelected = true
         
         let buttonTitle = sender.currentTitle!
-        let buttonPctDrop = String(buttonTitle.dropLast())
-        let buttonTitleAsNumber = Double(buttonPctDrop)!
-        tipValue = buttonTitleAsNumber/100
+        
+        calculatorBrain.calculateTipValue(pctValue: buttonTitle)
+        
+        
     }
     
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         splitNumberLabel.text = String(format: "%.f" ,sender.value)
-            noOfPeople = Int(sender.value)
+        calculatorBrain.calculateNoOfPeople(people: sender.value)
     }
     
     
@@ -53,11 +51,8 @@ class CalculatorViewController: UIViewController {
         
         
         let bill  = billTextField.text!
-        if bill != "" {
-            billTotal = Double(bill)!
-            let result = billTotal * (1 + tipValue) / Double(noOfPeople)
-            finalResult = String(format: "%.2f", result)
-        }
+        calculatorBrain.calculateResult(billValue: bill)
+        
         self.performSegue(withIdentifier: "goToResults", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -65,9 +60,9 @@ class CalculatorViewController: UIViewController {
         if segue.identifier == "goToResults" {
             
             let destinationVC = segue.destination as! ResultViewController
-            destinationVC.result = finalResult
-            destinationVC.tip = Int(tipValue * 100)
-            destinationVC.split = noOfPeople
+            destinationVC.result = calculatorBrain.getResult()
+            destinationVC.tip = calculatorBrain.getTip()
+            destinationVC.split = calculatorBrain.getNoOfPeople()
         }
     }
 }
