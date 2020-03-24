@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segmented_Control" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="7Jj-Sj-2DD" userLabel="Card Image View">
+                                <rect key="frame" x="87" y="208" width="240" height="340"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="cjf-YN-a0M"/>
+                                    <constraint firstAttribute="height" constant="340" id="jFV-DU-ijG"/>
+                                </constraints>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X6q-bw-4z1" userLabel="SegmentedControl">
+                                <rect key="frame" x="30" y="623" width="354" height="32"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="♠️"/>
+                                    <segment title="♥️"/>
+                                    <segment title="♣️"/>
+                                    <segment title="♦️"/>
+                                </segments>
+                                <connections>
+                                    <action selector="suitDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="A12-xR-dNh"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="X6q-bw-4z1" firstAttribute="top" secondItem="7Jj-Sj-2DD" secondAttribute="bottom" constant="75" id="2KQ-jY-7z3"/>
+                            <constraint firstItem="X6q-bw-4z1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="34j-RC-s4x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X6q-bw-4z1" secondAttribute="trailing" constant="30" id="OaN-bV-AV2"/>
+                            <constraint firstItem="7Jj-Sj-2DD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="WNs-M4-g7w"/>
+                            <constraint firstItem="7Jj-Sj-2DD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dDb-PS-rgi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="7Jj-Sj-2DD" id="lL7-Td-MBx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CardBack" width="122" height="170.5"/>
+    </resources>
+</document>
