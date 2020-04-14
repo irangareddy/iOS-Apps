@@ -20,6 +20,14 @@ The topics till date I used are :
 - API Reference
 - Core Location
 - Firebase 
+- Cocoapods
+- Swift Package Manager
 - SwiftUI
 
+## About Apps
 
+| App | Description |
+| --- | --- |
+| [I Am Rich](https://github.com/irangareddy/iOS-Apps/tree/master/I%20Am%20Rich) |  The app which makes you Rich  💰 |
+| [I Am Poor](https://github.com/irangareddy/iOS-Apps/tree/master/I%20Am%20Poor) | The app which makes you Poor  👎🏻|
+| [Tesla](https://github.com/irangareddy/iOS-Apps/tree/master/Tesla) | Test Ride booking app for Tesla Cars 
