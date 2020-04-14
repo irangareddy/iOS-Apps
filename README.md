@@ -37,4 +37,9 @@ The topics till date I used are :
 | [Weather Forecast](https://github.com/irangareddy/iOS-Apps/tree/master/Weather%20Forecast) | Realtime Weather Forecast App based on locations |
 | [Tips Calculator](https://github.com/irangareddy/iOS-Apps/tree/master/Tips%20Calculator) | Share bill and tip for members |
 | [MCQ](https://github.com/irangareddy/iOS-Apps/tree/master/MCQ) | Mutliple Choice Quiz |
+| [Destinii](https://github.com/irangareddy/iOS-Apps/tree/master/Destinii) | Check your Destinty Here | 
+| [Genie](https://github.com/irangareddy/iOS-Apps/tree/master/Genie) | A Ginie helps to accomplish your wishes |
+| [Guess](https://github.com/irangareddy/iOS-Apps/tree/master/Guess) | A number Guessing Game | 
+| [Starbucks](https://github.com/irangareddy/iOS-Apps/tree/master/Starbucks) | Coffee loading time checker |
+
 
