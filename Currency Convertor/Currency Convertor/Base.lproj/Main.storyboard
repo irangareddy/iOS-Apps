@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Currency_Convertor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a9f-cD-gCF" userLabel="Main Stack View">
+                                <rect key="frame" x="0.0" y="114.5" width="406" height="320"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ax8-ln-dbc" userLabel="Base Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="406" height="100"/>
+                                        <subviews>
+                                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsA-PK-zmh">
+                                                <rect key="frame" x="0.0" y="0.0" width="203" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="urV-Jx-4z3"/>
+                                                </constraints>
+                                            </pickerView>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PTH-oQ-LhW">
+                                                <rect key="frame" x="203" y="28" width="203" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Mat-qy-OWR"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ccr-MU-XNc" userLabel="Target1 Stack View">
+                                        <rect key="frame" x="0.0" y="110" width="406" height="100"/>
+                                        <subviews>
+                                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NwF-Za-f1s">
+                                                <rect key="frame" x="0.0" y="0.0" width="203" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="dLU-ti-oKS"/>
+                                                </constraints>
+                                            </pickerView>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAu-5Z-1Kb">
+                                                <rect key="frame" x="203" y="28" width="203" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="geO-Pc-uo1"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bw7-iW-y9Z" userLabel="Target2 Stack View">
+                                        <rect key="frame" x="0.0" y="220" width="406" height="100"/>
+                                        <subviews>
+                                            <pickerView tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJw-ZF-k0m">
+                                                <rect key="frame" x="0.0" y="0.0" width="203" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="IWW-yz-2Ot"/>
+                                                </constraints>
+                                            </pickerView>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U6O-G2-jDe">
+                                                <rect key="frame" x="203" y="28" width="203" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Q1H-Nj-7bH"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Convertor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2z-4T-eDy">
+                                <rect key="frame" x="16" y="60" width="382" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exchange rates are updated by Exchangesratesapi.io (2000-05-22)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7e-C6-Qla">
+                                <rect key="frame" x="12" y="450.5" width="390" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.47058823529999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="W7e-C6-Qla" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="01k-1h-AnY"/>
+                            <constraint firstItem="W7e-C6-Qla" firstAttribute="top" secondItem="a9f-cD-gCF" secondAttribute="bottom" constant="16" id="85R-3S-zZe"/>
+                            <constraint firstAttribute="trailing" secondItem="a9f-cD-gCF" secondAttribute="trailing" constant="8" id="8z1-Nb-g9W"/>
+                            <constraint firstItem="X2z-4T-eDy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GBs-ag-sZt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W7e-C6-Qla" secondAttribute="trailing" constant="12" id="Jhs-GR-erB"/>
+                            <constraint firstItem="a9f-cD-gCF" firstAttribute="top" secondItem="X2z-4T-eDy" secondAttribute="bottom" constant="16" id="Xem-Dt-my4"/>
+                            <constraint firstItem="a9f-cD-gCF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YjF-XK-adL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X2z-4T-eDy" secondAttribute="trailing" constant="16" id="d6I-4n-93M"/>
+                            <constraint firstItem="X2z-4T-eDy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="oD8-5E-gh2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="baseCurrencyField" destination="PTH-oQ-LhW" id="1u5-5R-dT7"/>
+                        <outlet property="baseCurrencyPicker" destination="gsA-PK-zmh" id="t1c-hQ-VdP"/>
+                        <outlet property="dateLabel" destination="W7e-C6-Qla" id="va9-9g-Ixy"/>
+                        <outlet property="target1CurrencyField" destination="NAu-5Z-1Kb" id="a6u-Bh-xez"/>
+                        <outlet property="target1CurrencyPicker" destination="NwF-Za-f1s" id="8gx-kZ-5gY"/>
+                        <outlet property="target2CurrencyField" destination="U6O-G2-jDe" id="ULy-2X-Bhx"/>
+                        <outlet property="target2CurrencyPicker" destination="QJw-ZF-k0m" id="FGR-ux-TFA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="41"/>
+        </scene>
+    </scenes>
+</document>
